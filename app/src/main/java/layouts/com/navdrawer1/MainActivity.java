@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private void loadSelection(int i){
         navList.setItemChecked(i, true);
+
         switch (i){
             case 0:
                 Fragment_Home fragment_home = new Fragment_Home();
