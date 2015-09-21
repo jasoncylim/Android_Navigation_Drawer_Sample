@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * This fragment implements the accelerometer
  */
 public class Fragment_1 extends Fragment implements SensorEventListener {
 
@@ -73,8 +73,6 @@ public class Fragment_1 extends Fragment implements SensorEventListener {
 
             String s = Double.toString(x) + "\n" + Double.toString(y) + "\n" + Double.toString(z);
 
-
-
             double alpha = 0.8;
 
             gx = gx*alpha + (1-alpha)*x;
@@ -88,7 +86,6 @@ public class Fragment_1 extends Fragment implements SensorEventListener {
             s = Double.toString(ax) + "\n" + Double.toString(ay) + "\n" + Double.toString(az);
 
             txt1.setText(s);
-
         }
     }
 

@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * This fragment implements the
  */
 public class Fragment_2 extends Fragment {
 
