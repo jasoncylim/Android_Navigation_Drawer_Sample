@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import static java.lang.String.format;
+
 
 /**
  * This fragment implements the accelerometer
@@ -83,7 +85,8 @@ public class Fragment_1 extends Fragment implements SensorEventListener {
             double ay = y - gy;
             double az = z - gz;
 
-            s = Double.toString(ax) + "\n" + Double.toString(ay) + "\n" + Double.toString(az);
+            s = format("x: %.2f\ny: %.2f\nz: %.2f", ax, ay, az);
+           // s = Double.toString(ax) + "\n" + Double.toString(ay) + "\n" + Double.toString(az);
 
             txt1.setText(s);
         }

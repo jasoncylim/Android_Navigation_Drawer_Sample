@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Accelerometer"
-        android:id="@+id/textView2"
+        android:id="@+id/textViewHeading"
         android:layout_gravity="left|center_vertical"
         android:layout_marginTop="33dp"
         android:layout_alignParentTop="true"

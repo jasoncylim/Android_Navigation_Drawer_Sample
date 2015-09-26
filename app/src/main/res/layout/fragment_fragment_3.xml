@@ -1,9 +1,54 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="layouts.com.navdrawer1.Fragment_3">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/fragment_3_test_text" />
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Magnetometer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textViewHeadingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHeading"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/textViewHeading"
+        android:text="heading value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewTrueHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="120dp"
+        android:text="True Heading:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewTrueHeading"
+        android:layout_alignRight="@+id/textViewTrueHeading"
+        android:layout_marginBottom="49dp"
+        android:text="Heading: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewTrueHeadingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewHeadingValue"
+        android:layout_alignTop="@+id/textViewTrueHeading"
+        android:text="true heading value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

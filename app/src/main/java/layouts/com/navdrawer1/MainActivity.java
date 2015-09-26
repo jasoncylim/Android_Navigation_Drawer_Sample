@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         ArrayList<String> navArray = new ArrayList<>();
         navArray.add("Home");
         navArray.add("Accelerometer");
-        navArray.add("Fragment 2");
-        navArray.add("Fragment 3");
-        navArray.add("Fragment 4");
+        navArray.add("Gyroscope");
+        navArray.add("Magnetometer");
+        navArray.add("Orientation");
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1,navArray);
         navList.setAdapter(adapter);
         navList.setOnItemClickListener(this);   // attach it to the on click listener
